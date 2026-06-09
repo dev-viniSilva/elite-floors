@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Floors — Premium Floors, Timeless Spaces</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ NAV ░░ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="img/logo.jpg" alt="Elite Floors" class="nav__logo-img" />
+        <div class="nav__logo-fallback" style="display:none">
+          <span class="nav__logo-e">E</span>
+          <div class="nav__logo-text">
+            <span class="nav__logo-brand">Elite</span>
+            <span class="nav__logo-sub">FLOORS</span>
+          </div>
+        </div>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#why" class="nav__link">Why Us</a>
+        <a href="#gallery" class="nav__link">Our Work</a>
+        <a href="#before-after" class="nav__link">Transformations</a>
+        <a href="#testimonials" class="nav__link">Reviews</a>
+        <a href="#contact" class="nav__cta">Free Estimate</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__bg-pattern"></div>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">New Jersey · Licensed &amp; Insured</p>
+      <h1 class="hero__headline reveal">
+        Floors That<br/>
+        <em>Elevate</em><br/>Every Space.
+      </h1>
+      <p class="hero__sub reveal">
+        Hardwood, vinyl, laminate, tile &amp; refinishing — installed with precision and finished to perfection. Elite Floors transforms homes across New Jersey.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#contact" class="btn btn--primary">Get a Free Estimate</a>
+        <a href="#gallery" class="btn btn--ghost">View Our Work</a>
+      </div>
+      <div class="hero__trust reveal">
+        <div class="hero__stars">★★★★★</div>
+        <p>5.0 rating · Serving homeowners across New Jersey</p>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ STATS BAR ░░ -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stats__item reveal">
+        <span class="stats__num" data-target="600">0</span><span class="stats__plus">+</span>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal">
+        <span class="stats__num" data-target="12">0</span><span class="stats__plus">+</span>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal">
+        <span class="stats__num" data-target="100">0</span><span class="stats__pct">%</span>
+        <p>Satisfaction Guarantee</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal">
+        <span class="stats__num" data-target="5">0</span><span class="stats__star">★</span>
+        <p>Google Rating</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ BRAND STRIP ░░ -->
+  <div class="brand-strip">
+    <div class="brand-strip__track">
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">Elite Floors</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">Licensed &amp; Insured</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">New Jersey</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">5.0 ★ Google Rating</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">Free Estimates</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">600+ Projects</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">Elite Floors</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">Licensed &amp; Insured</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">New Jersey</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">5.0 ★ Google Rating</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">Free Estimates</span></div>
+      <div class="brand-strip__item"><span class="brand-strip__dot">◆</span><span class="brand-strip__text">600+ Projects</span></div>
+    </div>
+  </div>
+
+  <!-- ░░ SERVICES ░░ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Crafted for<br/><em>Every Space</em></h2>
+        <p class="section-desc">From consultation to final coat, we deliver flooring solutions that stand the test of time — and look stunning doing it.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="28" width="40" height="8" rx="1" stroke="currentColor" stroke-width="2"/><rect x="4" y="20" width="40" height="8" rx="1" stroke="currentColor" stroke-width="2"/><rect x="4" y="36" width="40" height="8" rx="1" stroke="currentColor" stroke-width="2"/><path d="M12 20V12L24 6L36 12V20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Hardwood Installation</h3>
+          <p>Solid and engineered hardwood installed with meticulous care for grain direction, expansion gaps, and decades of lasting beauty.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="16" height="16" rx="1" stroke="currentColor" stroke-width="2"/><rect x="26" y="6" width="16" height="16" rx="1" stroke="currentColor" stroke-width="2"/><rect x="6" y="26" width="16" height="16" rx="1" stroke="currentColor" stroke-width="2"/><rect x="26" y="26" width="16" height="16" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Luxury Vinyl Plank</h3>
+          <p>100% waterproof LVP that captures the warmth of real wood — perfect for kitchens, basements, and high-traffic family areas.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 42L42 6M14 42H6v-8M42 14V6h-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 28l8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Laminate Flooring</h3>
+          <p>Durable, stylish laminate options that deliver premium aesthetics at a smart price point — installed cleanly and precisely.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 6V24L34 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+          </div>
+          <h3>Floor Refinishing</h3>
+          <p>Revive dull, scratched hardwood with professional sanding, custom staining, and a flawless finish that looks brand new.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="1" stroke="currentColor" stroke-width="2"/><path d="M6 24h36M24 6v36M14 14h4v4h-4zM30 14h4v4h-4zM14 30h4v4h-4zM30 30h4v4h-4z" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Tile Installation</h3>
+          <p>Ceramic, porcelain, and natural stone tile set with precision — from bathrooms and kitchens to entryways and outdoor spaces.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 40L20 16L32 28L40 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 40H44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="16" r="3" fill="currentColor"/><circle cx="32" cy="28" r="3" fill="currentColor"/></svg>
+          </div>
+          <h3>Free In-Home Estimate</h3>
+          <p>We visit your home, measure your space, and provide a clear, detailed quote — no pressure, no obligation, usually within 24 hours.</p>
+          <a href="#contact" class="service-card__link">Book now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ WHY US ░░ -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why__inner">
+        <div class="why__visual reveal">
+          <div class="why__card-stack">
+            <div class="why__card why__card--back">
+              <div class="why__card-lines">
+                <div></div><div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+            <div class="why__card why__card--front">
+              <div class="why__card-icon">◆</div>
+              <h4>Our Promise</h4>
+              <p>"Every floor we install is treated with the care and precision it deserves — because your home is our reputation."</p>
+              <div class="why__card-sig">Elite Floors</div>
+            </div>
+          </div>
+          <div class="why__badge reveal">
+            <span class="why__badge-num">5.0</span>
+            <span>★★★★★</span>
+            <small>Google Reviews</small>
+          </div>
+        </div>
+        <div class="why__content reveal">
+          <div class="cta-logo-badge">
+            <img src="img/logo.jpg" alt="Elite Floors" />
+          </div>
+          <span class="section-tag">Why Elite Floors</span>
+          <h2 class="section-title">Quality You Can<br/><em>Feel Underfoot</em></h2>
+          <p class="why__desc">We don't cut corners — literally or figuratively. Every install is backed by skilled hands, quality materials, and a genuine pride in the finished result.</p>
+          <ul class="why__list">
+            <li>
+              <div class="why__list-dot"></div>
+              <div>
+                <strong>Direct &amp; Personal Service</strong>
+                <span>Your installer communicates with you from start to finish — no call centers, no runaround.</span>
+              </div>
+            </li>
+            <li>
+              <div class="why__list-dot"></div>
+              <div>
+                <strong>Spotless Workmanship</strong>
+                <span>We protect your home throughout and leave every room clean, polished, and ready to enjoy.</span>
+              </div>
+            </li>
+            <li>
+              <div class="why__list-dot"></div>
+              <div>
+                <strong>On Schedule, Every Time</strong>
+                <span>We respect your time — jobs start when promised and finish on deadline.</span>
+              </div>
+            </li>
+            <li>
+              <div class="why__list-dot"></div>
+              <div>
+                <strong>Licensed &amp; Fully Insured</strong>
+                <span>Your home and investment are covered from the first measurement to the last nail.</span>
+              </div>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Book a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ GALLERY ░░ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Floors We're<br/><em>Proud Of</em></h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__row gallery__row--feature">
+          <div class="gallery__item gallery__item--tall reveal">
+             <img src="img/wood2.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+          <div class="gallery__col">
+            <div class="gallery__item reveal">
+               <img src="img/wood2.webp" alt="Hardwood living room" loading="lazy" />
+              <div class="gallery__label">Elite Floors</div>
+            </div>
+            <div class="gallery__item reveal">
+               <img src="img/wood2.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+            </div>
+          </div>
+          <div class="gallery__item gallery__item--tall reveal">
+             <img src="img/wood2.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+        </div>
+        <div class="gallery__row gallery__row--quad">
+          <div class="gallery__item reveal">
+            <img src="img/wood1.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+          <div class="gallery__item reveal">
+            <img src="img/wood2.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+          <div class="gallery__item reveal">
+            <img src="img/wood3.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+          <div class="gallery__item reveal">
+            <img src="img/wood4.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+        </div>
+        <div class="gallery__row gallery__row--duo">
+          <div class="gallery__item reveal">
+           <img src="img/wood5.jpeg" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Elite Floors</div>
+          </div>
+          <div class="gallery__item reveal">
+             <img src="img/wood2.webp" alt="Hardwood living room" loading="lazy" />
+            <div class="gallery__label">Refinishing · Before &amp; After</div>
+          </div>
+        </div>
+      </div>
+      <p class="gallery__note reveal">
+        See more on our
+        <a href="https://www.google.com/maps/search/Elite+Floors+New+Jersey" target="_blank" rel="noopener">Google Business Profile →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ░░ BEFORE & AFTER ░░ -->
+  <section class="ba" id="before-after">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Transformations</span>
+        <h2 class="section-title">Before &amp;<br/><em>After</em></h2>
+        <p class="section-desc">Drag the slider to see the difference Elite Floors makes. The same craftsmanship, every single project.</p>
+      </div>
+      <div class="ba__grid">
+
+        <!-- Card 1 -->
+        <div class="ba__card reveal">
+          <div class="ba__slider" data-slider>
+            <div class="ba__img-wrap">
+              <div class="ba__img ba__img--before ba__demo ba__demo--before1"></div>
+              <div class="ba__img ba__img--after ba__demo ba__demo--after1"></div>
+              <div class="ba__clip" data-clip></div>
+            </div>
+            <div class="ba__handle" data-handle>
+              <div class="ba__handle-line"></div>
+              <div class="ba__handle-knob">
+                <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ba__handle-line"></div>
+            </div>
+            <div class="ba__tag ba__tag--before">Before</div>
+            <div class="ba__tag ba__tag--after">After</div>
+          </div>
+          <div class="ba__meta">
+            <div>
+              <strong>Hardwood Refinishing</strong>
+              <span>Somerset County, NJ</span>
+            </div>
+            <a href="#contact" class="ba__cta">Get a quote →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="ba__card reveal">
+          <div class="ba__slider" data-slider>
+            <div class="ba__img-wrap">
+              <div class="ba__img ba__img--before ba__demo ba__demo--before2"></div>
+              <div class="ba__img ba__img--after ba__demo ba__demo--after2"></div>
+            </div>
+            <div class="ba__handle" data-handle>
+              <div class="ba__handle-line"></div>
+              <div class="ba__handle-knob">
+                <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ba__handle-line"></div>
+            </div>
+            <div class="ba__tag ba__tag--before">Before</div>
+            <div class="ba__tag ba__tag--after">After</div>
+          </div>
+          <div class="ba__meta">
+            <div>
+              <strong>LVP Installation</strong>
+              <span>Monmouth County, NJ</span>
+            </div>
+            <a href="#contact" class="ba__cta">Get a quote →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="ba__card reveal">
+          <div class="ba__slider" data-slider>
+            <div class="ba__img-wrap">
+              <div class="ba__img ba__img--before ba__demo ba__demo--before3"></div>
+              <div class="ba__img ba__img--after ba__demo ba__demo--after3"></div>
+            </div>
+            <div class="ba__handle" data-handle>
+              <div class="ba__handle-line"></div>
+              <div class="ba__handle-knob">
+                <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ba__handle-line"></div>
+            </div>
+            <div class="ba__tag ba__tag--before">Before</div>
+            <div class="ba__tag ba__tag--after">After</div>
+          </div>
+          <div class="ba__meta">
+            <div>
+              <strong>Tile Installation</strong>
+              <span>Morris County, NJ</span>
+            </div>
+            <a href="#contact" class="ba__cta">Get a quote →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TESTIMONIALS ░░ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Reviews</span>
+        <h2 class="section-title">Homeowners Who Love<br/><em>Their New Floors</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"From the first call to the final walkthrough, Elite Floors was professional and reliable. They installed hardwood throughout our first floor and it looks absolutely stunning. The attention to detail is unmatched."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MR</div>
+            <div>
+              <strong>Maria R.</strong>
+              <span>Monmouth County, NJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal testimonial-card--featured">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"We had old carpet pulled up and LVP installed throughout our entire home. The crew was fast, clean, and the result is beyond what we imagined. Highly recommend Elite Floors to anyone!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JT</div>
+            <div>
+              <strong>James T.</strong>
+              <span>Somerset County, NJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Had my hardwood floors refinished after 20 years and they look brand new. The team was respectful of our home and left everything spotless. Will definitely use them again."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SL</div>
+            <div>
+              <strong>Sandra L.</strong>
+              <span>Morris County, NJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Tile work in our kitchen and two bathrooms — flawless. Grout lines are perfect, everything is level, and they finished ahead of schedule. Elite Floors truly lives up to their name."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">DK</div>
+            <div>
+              <strong>David K.</strong>
+              <span>Bergen County, NJ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__google reveal">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span>Rated <strong>5.0 out of 5</strong> on Google Reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ QUOTE CTA ░░ -->
+  <section class="quote-cta">
+    <div class="quote-cta__bg"><div class="quote-cta__pattern"></div></div>
+    <div class="container">
+      <div class="quote-cta__inner reveal">
+        <div class="quote-cta__content">
+          <div class="cta-logo-badge">
+            <img src="img/logo.jpg" alt="Elite Floors" />
+          </div>
+          <span class="section-tag">Free Estimate</span>
+          <h2 class="quote-cta__title">Every Project Gets a<br/><em>Custom Quote</em></h2>
+          <p>No guesswork, no pressure. We come to your home, take precise measurements, and give you a clear written quote — completely free.</p>
+          <ul class="quote-cta__perks">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+              In-home visit at your convenience
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+              Written quote within 24 hours
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+              Zero obligation, zero pressure
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+              Always 100% free
+            </li>
+          </ul>
+        </div>
+        <div class="quote-cta__action">
+          <div class="quote-cta__card">
+            <p class="quote-cta__card-label">Ready to get started?</p>
+            <h3>Call or Text Us Today</h3>
+            <a href="tel:7327888495" class="quote-cta__phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+              (732) 788-8495
+            </a>
+            <div class="quote-cta__divider">or</div>
+            <a href="#contact" class="btn btn--primary btn--full">Fill Out the Quote Form</a>
+            <p class="quote-cta__hours">Mon–Sat · 7am – 7pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__content reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Ready for Beautiful<br/><em>New Floors?</em></h2>
+          <p>Call, text, or fill out the form. We'll respond within one business day with a clear, no-pressure quote tailored to your project.</p>
+          <div class="contact__details">
+            <a href="tel:7327888495" class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+              </div>
+              <div>
+                <strong>(732) 788-8495</strong>
+                <span>Mon–Sat, 7am–7pm</span>
+              </div>
+            </a>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>New Jersey</strong>
+                <span>Available year-round</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form-wrap reveal">
+          <form
+            class="contact__form"
+            id="contactForm"
+            method="POST"
+            action="https://formspree.io/f/xaqvlnkj"
+          >
+            <input type="hidden" name="_subject" value="New Elite Floors Estimate Request" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(732) 555-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service…</option>
+                <option>Hardwood Installation</option>
+                <option>Luxury Vinyl Plank (LVP)</option>
+                <option>Laminate Flooring</option>
+                <option>Floor Refinishing</option>
+                <option>Tile Installation</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="4" placeholder="Square footage, room type, current flooring, any questions…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Request My Free Estimate</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="form__privacy">No spam, ever. We'll only contact you about your project.</p>
+          </form>
+          <!-- Success message shown after Formspree redirect -->
+          <div class="form__success" id="formSuccess" style="display:none">
+            <div class="form__success-icon">◆</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you — we'll be in touch within one business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="img/logo.jpg" alt="Elite Floors" class="footer__logo-img" />
+          </div>
+          <p class="footer__tagline">Premium flooring installation serving New Jersey homeowners and businesses with quality, precision, and excellence.</p>
+          <div class="footer__social">
+            <a href="tel:7327888495" aria-label="Call us" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Hardwood Installation</a></li>
+            <li><a href="#services">Luxury Vinyl Plank</a></li>
+            <li><a href="#services">Laminate Flooring</a></li>
+            <li><a href="#services">Floor Refinishing</a></li>
+            <li><a href="#services">Tile Installation</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">Why Elite Floors</a></li>
+            <li><a href="#gallery">Our Work</a></li>
+            <li><a href="#before-after">Transformations</a></li>
+            <li><a href="#testimonials">Client Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__contact-list">
+            <li><a href="tel:7327888495">(732) 788-8495</a></li>
+            <li>Mon–Sat: 7am – 7pm</li>
+            <li>New Jersey</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Elite Floors. All rights reserved.</p>
+        <p>Licensed &amp; Insured · Serving all of New Jersey</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
