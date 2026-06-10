@@ -103,7 +103,6 @@
   // ── BEFORE / AFTER SLIDERS ──
   document.querySelectorAll('[data-slider]').forEach(slider => {
     const handle = slider.querySelector('[data-handle]');
-    const wrap   = slider.querySelector('.ba__img-wrap');
     const after  = slider.querySelector('.ba__img--after');
     if (!after || !handle) return;
 
@@ -131,77 +130,9 @@
     slider.addEventListener('touchend',   () => { dragging = false; });
   });
 
-  // ── FORM: Formspree + inline success ──
-  const form = document.getElementById('contactForm');
-  const successEl = document.getElementById('formSuccess');
-
-  if (form) {
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      // Basic validation
-      let valid = true;
-      form.querySelectorAll('[required]').forEach(field => {
-        field.style.borderColor = '';
-        if (!field.value.trim()) {
-          valid = false;
-          field.style.borderColor = '#c0392b';
-          field.addEventListener('input', () => { field.style.borderColor = ''; }, { once: true });
-        }
-      });
-
-      if (!valid) {
-        shakeForm(form);
-        return;
-      }
-
-      // Submit to Formspree via fetch (no redirect)
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = '<span>Sending…</span>';
-      submitBtn.disabled = true;
-
-      try {
-        const data = new FormData(form);
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          // Show success message inline
-          form.style.display = 'none';
-          if (successEl) successEl.style.display = 'block';
-        } else {
-          submitBtn.innerHTML = originalText;
-          submitBtn.disabled = false;
-          alert('Something went wrong. Please try calling us directly at (732) 788-8495.');
-        }
-      } catch (err) {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        alert('Unable to send. Please call us at (732) 788-8495.');
-      }
-    });
-  }
-
-  function shakeForm(el) {
-    el.style.animation = 'shake 0.4s ease';
-    el.addEventListener('animationend', () => { el.style.animation = ''; }, { once: true });
-  }
-
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      20%       { transform: translateX(-8px); }
-      40%       { transform: translateX(8px); }
-      60%       { transform: translateX(-5px); }
-      80%       { transform: translateX(5px); }
-    }
-  `;
-  document.head.appendChild(style);
+  // ── FORM: submitted natively to Formspree (redirect handled by Formspree) ──
+  // No JS interception — the form POSTs directly and Formspree shows its thank-you page.
+  // To use a custom redirect, set it in your Formspree dashboard under Settings → Redirect URL.
 
   // ── SERVICE CARD HOVER DEPTH ──
   document.querySelectorAll('.service-card').forEach(card => {
